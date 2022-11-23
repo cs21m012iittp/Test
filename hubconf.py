@@ -11,6 +11,7 @@ from sklearn.metrics.cluster import completeness_score
 from sklearn.metrics.cluster import homogeneity_score
 from sklearn.metrics.cluster import v_measure_score
 from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import GridSearchCV
 
 # You can import whatever standard packages are required
 #
