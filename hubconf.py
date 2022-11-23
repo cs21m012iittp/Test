@@ -118,11 +118,11 @@ def get_metrics(model1=None,X=None,y=None):
   
   # f1: 2 tp / (2 tp + fp + fn)
   f1 = f1_score(y, y_pred,average='weighted')
-  auc=0
+  
   # Obtain accuracy, precision, recall, f1score, auc score - refer to sklearn metrics
   #acc, prec, rec, f1, auc = 0,0,0,0,0
   # write your code here...
-  return acc, prec, rec, f1, auc
+  return acc, prec, rec, f1
 
 def get_paramgrid_lr():
   # you need to return parameter grid dictionary for use in grid search cv
