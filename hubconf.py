@@ -109,15 +109,15 @@ def build_rf_model(X=None, y=None):
 def get_metrics(model1=None,X=None,y=None):
   
   y_pred = model1.predict(X)
-  acc = accuracy_score(y, y_pred)
+  acc = accuracy_score(y, y_pred,average='weighted')
  
-  prec = precision_score(y, y_pred)
+  prec = precision_score(y, y_pred,average='weighted')
   
   # recall: tp / (tp + fn)
-  rec = recall_score(y, y_pred)
+  rec = recall_score(y, y_pred,average='weighted')
   
   # f1: 2 tp / (2 tp + fp + fn)
-  f1 = f1_score(y, y_pred)
+  f1 = f1_score(y, y_pred,average='weighted')
   auc=0
   # Obtain accuracy, precision, recall, f1score, auc score - refer to sklearn metrics
   #acc, prec, rec, f1, auc = 0,0,0,0,0
