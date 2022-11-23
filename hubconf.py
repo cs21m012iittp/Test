@@ -152,7 +152,7 @@ def get_paramgrid_rf():
   # write your code here...
   return rf_param_grid
 
-def perform_gridsearch_cv_multimetric(model=None, param_grid=None, cv=5, X=None, y=None, metrics=['accuracy','roc_auc']):
+def perform_gridsearch_cv_multimetric(model1=None, param_grid=None, cv=5, X=None, y=None, metrics=['accuracy','roc_auc']):
   
   # you need to invoke sklearn grid search cv function
   # refer to sklearn documentation
